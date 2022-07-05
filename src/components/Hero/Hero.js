@@ -36,7 +36,7 @@ function Hero() {
               title="Instagram - carllljamesss"
               target="_blank"
               rel="noreferrer"
-              href="https://www.instagram.com/carllljamesss/"
+              href="https://github.com/Just-a-NoobieDev"
             >
               <Social>
                 <FontAwesomeIcon className="git" icon={faGithub} size="xl" />
@@ -46,7 +46,7 @@ function Hero() {
               title="Instagram - carllljamesss"
               target="_blank"
               rel="noreferrer"
-              href="https://www.instagram.com/carllljamesss/"
+              href="https://www.linkedin.com/in/carl-james-r-b66350201/"
             >
               <Social>
                 <FontAwesomeIcon
@@ -60,7 +60,7 @@ function Hero() {
               title="Instagram - carllljamesss"
               target="_blank"
               rel="noreferrer"
-              href="https://www.instagram.com/carllljamesss/"
+              href="https://twitter.com/Carllljamessss"
             >
               <Social>
                 <FontAwesomeIcon
