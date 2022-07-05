@@ -1,8 +1,19 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
 
 body {
+  box-sizing: border-box;
+  padding: 0;
   margin: 0;
   font-family: "Poppins", sans-serif;
+  text-decoration: none;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+.gray-text {
+  color: #181818;
+}
+
+.long {
+  transform: translateY(5px);
 }

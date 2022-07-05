@@ -1,10 +1,15 @@
-import "./App.css";
+import Hero from "./components/Hero/Hero";
+import Layout from "./utils/Layout";
+import Logo from "./utils/Logo";
 
 function App() {
   return (
-    <div className="App">
-      <h1>THIS PORTFOLIO IS UNDER CONSTRUCTION.</h1>
-    </div>
+    <Layout>
+      <a href="/">
+        <Logo />
+      </a>
+      <Hero />
+    </Layout>
   );
 }
 
