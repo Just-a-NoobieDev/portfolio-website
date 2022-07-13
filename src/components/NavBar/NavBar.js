@@ -29,7 +29,7 @@ function NavBar() {
           to="about"
           spy={true}
           smooth={true}
-          offset={50}
+          offset={-30}
           duration={900}
           onClick={closeMenu}
         >

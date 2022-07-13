@@ -46,14 +46,15 @@ export const NavMenu = styled.div`
   opacity: 0;
   animation: ${Float} .5s forwards;
   padding: 2.5rem 0;
+  overflow : hidden;
 
   
-    &.active {
+  &.active {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-   }
+  }
   
 `;
 
@@ -62,13 +63,13 @@ export const NavLink = styled(Link)`
   display: flex;
   align-items: center;
   text-decoration: none;
-  font-size: 2em;
+  font-size: 1.5em;
   justify-content: center;
   margin-bottom: 20px;
   padding: 1rem;
   width: 100%;
 
-  @media (min-width: ${breakpoints.desktopMin}) {
+  @media (min-width: ${breakpoints.tabletMin}) {
     font-size: 3em;
     transition: 0.3s;
     &:hover {
@@ -83,14 +84,14 @@ export const Links = styled(Slink)`
   display: flex;
   align-items: center;
   text-decoration: none;
-  font-size: 2em;
+  font-size: 1.5em;
   justify-content: center;
   margin-bottom: 20px;
   cursor: pointer;
   padding: 1rem;
   width: 100%;
 
-  @media (min-width: ${breakpoints.desktopMin}) {
+  @media (min-width: ${breakpoints.tabletMin}) {
     font-size: 3em;
     transition: 0.3s;
     &:hover {
