@@ -10,7 +10,7 @@ export const QUERIES = {
 };
 
 export const Paragraph = styled.p`
-  margin: 50px 0;
+  margin: 20px 0;
   color: #696969;
   width: 100%;
   font-style: normal;
@@ -24,6 +24,26 @@ export const Paragraph = styled.p`
     :hover {
       border-bottom: 2px solid black;
     }
+  }
+`;
+
+export const BtnLink = styled(Paragraph)`
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 163.19%;
+  display: inline;
+  color: #3e3e3e;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  padding: 15px;
+  border: 1.5px solid #3e3e3e;
+  transition: 0.3s;
+  :hover {
+    color: #ffffff;
+    background-color: #3e3e3e;
+  }
+  span {
+    font-size: 20px;
   }
 `;
 
@@ -67,6 +87,50 @@ export const HeadingSec = styled(HeadingMain)`
 `;
 
 export const SubHeading = styled.h2`
-  font-size: 2rem;
+  font-style: normal;
   font-weight: 500;
+  font-size: 33px;
+  line-height: 80%;
+  letter-spacing: 0.03em;
+  transform: translateY(30px);
+  opacity: 0;
+  animation: ${Float} 1s 0.2s forwards;
+  @media (min-width: ${breakpoints.mobileMax}) {
+    font-size: 40px;
+    transform: scale(1);
+  }
+  > span {
+    color: #b4e0e8;
+  }
+`;
+
+export const TextContent = styled.div`
+  max-width: 700px;
+  .Paragraph {
+    a {
+      border-bottom: 2px solid transparent;
+      transition: 0.3s;
+      :hover {
+        border-bottom: 2px solid black;
+      }
+    }
+  }
+`;
+
+export const TextContentWrap = styled(TextContent)`
+  width: 100%;
+  ${Paragraph} {
+    margin: 20px 0 40px 0px;
+  }
+  :nth-child(2) {
+    ${Paragraph} {
+      margin: 0px 0px;
+      @media (min-width: ${breakpoints.mobileMax}) {
+        margin: 40px 0;
+      }
+    }
+  }
+  @media (min-width: ${breakpoints.mobileMax}) {
+    width: 45%;
+  }
 `;
