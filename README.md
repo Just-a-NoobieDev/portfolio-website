@@ -6,6 +6,6 @@
 
 #### This project is still in progress but you can already visit the page using the link bellow:
 
-[carljamesroxas.herokuapp.com](https://carljamesroxas.herokuapp.com/ "Carl James Roxas - Portfolio")
+[carljamesroxas.vercel.app](https://carljamesroxas.vercel.app/ "Carl James Roxas - Portfolio")
 
 #### This project is built with React JS Library and I used styled-components to style the pages
