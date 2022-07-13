@@ -18,7 +18,6 @@ const Layout = styled.div`
   animation: ${FadeOut} 0.6s 0.3s ease-in-out forwards;
   a {
     text-decoration: none;
-    color: black;
   }
   @media (min-width: ${breakpoints.tabletMin}) {
     max-width: 940px;
