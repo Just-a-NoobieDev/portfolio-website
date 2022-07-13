@@ -1,29 +1,13 @@
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
-  faInstagramSquare,
-  faGithub,
-  faLinkedin,
-  faTwitter,
-} from "@fortawesome/free-brands-svg-icons";
-import styled from "styled-components";
+  FaGithub,
+  FaLinkedin,
+  FaTwitter,
+  FaInstagramSquare,
+} from "react-icons/fa";
 
-import { HeroWrapCont, HeroElements, Line, Social } from "./styles";
+import { HeroWrapCont, HeroElements, Line, Social, SocialDiv } from "./styles";
 import { Container } from "../../utils/Container";
 import { HeadingMain } from "../../utils/Typography";
-
-const SocialDiv = styled.div`
-  width: auto;
-  height: auto;
-  display: flex;
-  margin-left: 20px;
-`;
-
-const SocLink = styled.a`
-  color: gray;
-  text-decoration: none;
-  width: 40px;
-  height: 27px;
-`;
 
 function Hero() {
   return (
@@ -39,7 +23,7 @@ function Hero() {
               href="https://github.com/Just-a-NoobieDev"
             >
               <Social>
-                <FontAwesomeIcon className="git" icon={faGithub} size="xl" />
+                <FaGithub className="git" size="1.5em" />
               </Social>
             </a>
             <a
@@ -49,11 +33,7 @@ function Hero() {
               href="https://www.linkedin.com/in/carl-james-r-b66350201/"
             >
               <Social>
-                <FontAwesomeIcon
-                  className="linkedn"
-                  icon={faLinkedin}
-                  size="xl"
-                />
+                <FaLinkedin className="linkedn" size="1.5em" />
               </Social>
             </a>
             <a
@@ -63,11 +43,7 @@ function Hero() {
               href="https://twitter.com/Carllljamessss"
             >
               <Social>
-                <FontAwesomeIcon
-                  className="twitter"
-                  icon={faTwitter}
-                  size="xl"
-                />
+                <FaTwitter className="twitter" size="1.5em" />
               </Social>
             </a>
             <a
@@ -77,11 +53,7 @@ function Hero() {
               href="https://www.instagram.com/carllljamesss/"
             >
               <Social>
-                <FontAwesomeIcon
-                  className="insta"
-                  icon={faInstagramSquare}
-                  size="xl"
-                />
+                <FaInstagramSquare className="insta" size="1.5em" />
               </Social>
             </a>
           </SocialDiv>

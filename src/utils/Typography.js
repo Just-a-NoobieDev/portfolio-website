@@ -1,5 +1,8 @@
-import styled, { keyframes } from "styled-components";
+import styled from "styled-components";
+
 import { breakpoints } from "./Media";
+import { Float } from "./Animation";
+
 export const QUERIES = {
   medium: `min-width: 1092px`,
   small: `min-width: 552px`,
@@ -21,17 +24,6 @@ export const Paragraph = styled.p`
     :hover {
       border-bottom: 2px solid black;
     }
-  }
-`;
-
-export const Float = keyframes`
-  from {
-    transform: translateY(30px);
-    opacity: 0;
-  }
-  to {
-    transform: translateY(0);
-    opacity: 1;
   }
 `;
 
@@ -72,4 +64,9 @@ export const HeadingSec = styled(HeadingMain)`
   @media (min-width: ${breakpoints.mobileMax}) {
     font-size: 40px;
   }
+`;
+
+export const SubHeading = styled.h2`
+  font-size: 2rem;
+  font-weight: 500;
 `;
