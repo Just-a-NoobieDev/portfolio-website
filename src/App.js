@@ -8,7 +8,7 @@ import {
 
 import NavBar from "./components/NavBar/NavBar";
 import ProjectNavBar from "./components/NavBar/ProjectNavBar";
-import Projects from "./components/Projects/Projects";
+import Projects from "./pages/Projects";
 import Home from "./pages/Home";
 import Layout from "./utils/Layout";
 
