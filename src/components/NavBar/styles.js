@@ -108,8 +108,12 @@ export const ExtraDiv = styled.div`
   h3 {
     margin: 0 1rem;
     color: #000;
-    font-size: 1.3rem;
+    font-size: 1rem;
     font-weight: 500;
+
+    @media (min-width: 760px) {
+      font-size: 1.3rem;
+    }
   }
 `;
 
