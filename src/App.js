@@ -3,16 +3,20 @@ import { Routes, Route, useLocation } from "react-router-dom";
 
 import NavBar from "./components/NavBar/NavBar";
 import ProjectNavBar from "./components/NavBar/ProjectNavBar";
+import NotFound from "./components/NotFound";
 import Projects from "./pages/Projects";
 import Home from "./pages/Home";
 import Layout from "./utils/Layout";
 
 function App() {
   const Project = useLocation();
-  let isProject = true;
-  if (Project.pathname === "/projects") {
-    isProject = false;
+  let isProject = false;
+  if (Project.pathname === "/") {
+    isProject = true;
   }
+
+  console.log(Project.pathname);
+  console.log(isProject);
 
   return (
     <Layout>
@@ -21,6 +25,7 @@ function App() {
       <Routes>
         <Route path="/projects" exact element={<Projects />} />
         <Route path="/" exact element={<Home />} />
+        <Route path="*" exact element={<NotFound />} />
       </Routes>
     </Layout>
   );
