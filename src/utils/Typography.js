@@ -89,8 +89,8 @@ export const HeadingSec = styled(HeadingMain)`
 export const SubHeading = styled.h2`
   font-style: normal;
   font-weight: 500;
-  font-size: 33px;
-  line-height: 80%;
+  font-size: 28px;
+  line-height: 120%;
   letter-spacing: 0.03em;
   transform: translateY(30px);
   opacity: 0;
