@@ -24,7 +24,7 @@ export const AboutContainer = styled.div`
 `;
 
 export const SubContainer = styled.div`
-  margin: 70px 0;
+  margin: 70px 0 0 0;
   width: 100%;
   display: flex;
   flex-direction: column;
