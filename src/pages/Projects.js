@@ -78,7 +78,7 @@ function ProjectsPage() {
 
   const searchedData = INFOS.filter((val) => {
     if (search == "") {
-      return dataArr;
+      return val;
     } else if (val.title.toLowerCase().includes(search.toLowerCase())) {
       return val;
     }
@@ -98,7 +98,7 @@ function ProjectsPage() {
 
   useEffect(() => {
     setDataArr(filteredData);
-  }, [filter]);
+  }, [search, filter]);
 
   // console.log(dataArr);
 
