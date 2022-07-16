@@ -3,6 +3,7 @@ import styled from "styled-components";
 import { SubContainer } from "../../utils/Container";
 import { SubHeading, Paragraph } from "../../utils/Typography";
 import { breakpoints } from "../../utils/Media";
+import { Float } from "../../utils/Animation";
 
 import ProjectInfo from "./ProjectInfo";
 
@@ -20,7 +21,9 @@ const ProjectImage = styled.div`
   transition-duration: 0.3s;
   background-size: cover;
   background-position: center;
-  transition-duration: 0.3s;
+  transition-duration: 0.2s;
+  opacity: 0;
+  animation: ${Float} 1s 0.2s forwards;
 
   :hover {
     transform: scale(1.03);
@@ -51,6 +54,8 @@ const ProjectParagraph = styled(Paragraph)`
   max-width: unset;
   margin-bottom: 20px;
   font-size: 14px;
+  opacity: 0;
+  animation: ${Float} 1s 0.2s forwards;
   @media (min-width: 760px) {
     width: 80%;
     margin: 0 auto;
