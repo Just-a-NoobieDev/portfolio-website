@@ -7,6 +7,7 @@ import NotFound from "./components/NotFound";
 import ProjectsPage from "./pages/Projects";
 import Home from "./pages/Home";
 import Layout from "./utils/Layout";
+import ScrollToTop from "./components/ScrollToTop";
 
 function App() {
   const Project = useLocation();
@@ -24,6 +25,7 @@ function App() {
         <Route path="/projects" exact element={<ProjectsPage />} />
         <Route path="*" exact element={<NotFound />} />
       </Routes>
+      <ScrollToTop />
     </Layout>
   );
 }

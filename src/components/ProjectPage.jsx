@@ -49,6 +49,10 @@ function PaginatedItems({ itemsPerPage, state }) {
   const [itemOffset, setItemOffset] = useState(0);
 
   const handlePageClick = (event) => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
     const newOffset = (event.selected * itemsPerPage) % state.length;
     setItemOffset(newOffset);
   };
