@@ -1,4 +1,3 @@
-import { setActiveLink } from "react-scroll/modules/mixins/scroller";
 import styled from "styled-components";
 
 import { BtnLink } from "../utils/Typography";
@@ -23,14 +22,12 @@ const Buttons = styled(BtnLink)`
   }
 `;
 
-const Button = ({ text, setFilter, setActive, active }) => {
+const Button = ({ text, active, onClick }) => {
   return (
     <Buttons
       className={`${active == text.toLowerCase() ? "active" : ""}`}
-      onClick={() => {
-        setFilter(text);
-        setActive(text.toLowerCase());
-      }}
+      value={text.toLowerCase()}
+      onClick={onClick}
     >
       {text}
     </Buttons>

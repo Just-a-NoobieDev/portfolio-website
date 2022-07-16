@@ -48,7 +48,7 @@
     "id": 5,
     "title": "Test Project",
     "description": "Test Description Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rerum quasi nihil consequuntur itaque laboriosam quas doloribus quos inventore eum tenetur!",
-    "stacks": ["test", "test", "test"],
+    "stacks": ["React", "test", "test"],
     "type": "personal",
     "repo": "/test",
     "demoUrl": "/test"

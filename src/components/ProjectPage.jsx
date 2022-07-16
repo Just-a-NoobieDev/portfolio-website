@@ -1,70 +1,37 @@
 import ReactPaginate from "react-paginate";
 import { useEffect, useState } from "react";
 
-import INFOS from "../data/data.json";
 import imagesLink from "../data/images";
 import Project from "./Projects/Project";
 import { Container } from "../utils/Container";
 import { Paragraph } from "../utils/Typography";
 
-function Items({ currentItems, search, filter, setItemsCount }) {
+function Items({ state, itemsPerPage, itemOffset, setPageCount }) {
+  const [split, setSplit] = useState(null);
+
+  useEffect(() => {
+    const endOffset = itemOffset + itemsPerPage;
+    setSplit(state.slice(itemOffset, endOffset));
+    setPageCount(Math.ceil(state.length / itemsPerPage));
+  }, [itemOffset, itemsPerPage, state]);
+
   return (
     <>
-      {currentItems &&
-      currentItems
-        .filter((val) => {
-          if (search == "") {
-            return val;
-          } else if (val.title.toLowerCase().includes(search.toLowerCase())) {
-            return val;
-          }
+      {split && split.length > 0 ? (
+        split.map(({ id, title, description, stacks, type, repo, demoUrl }) => {
+          return (
+            <Project
+              key={id}
+              title={title}
+              description={description}
+              stacks={stacks}
+              type={type}
+              repo={repo}
+              live={demoUrl}
+              image={`"${imagesLink[id]}"`}
+            />
+          );
         })
-        .filter((val) => {
-          if (filter.toLowerCase() == "all") {
-            return val;
-          } else if (
-            val.stacks
-              .map((item) => item.toLocaleLowerCase())
-              .includes(filter.toLowerCase()) > 0
-          ) {
-            return val;
-          }
-        }).length > 0 ? (
-        currentItems
-          .filter((val) => {
-            if (search == "") {
-              return val;
-            } else if (val.title.toLowerCase().includes(search.toLowerCase())) {
-              return val;
-            }
-          })
-          .filter((val) => {
-            if (filter.toLowerCase() == "all") {
-              return val;
-            } else if (
-              val.stacks
-                .map((item) => item.toLocaleLowerCase())
-                .includes(filter.toLowerCase())
-            ) {
-              return val;
-            } else {
-              setItemsCount(0);
-            }
-          })
-          .map(({ id, title, description, stacks, type, repo, demoUrl }) => {
-            return (
-              <Project
-                key={id}
-                title={title}
-                description={description}
-                stacks={stacks}
-                type={type}
-                repo={repo}
-                live={demoUrl}
-                image={`"${imagesLink[id]}"`}
-              />
-            );
-          })
       ) : (
         <>
           <Container>
@@ -76,34 +43,23 @@ function Items({ currentItems, search, filter, setItemsCount }) {
   );
 }
 
-function PaginatedItems({ itemsPerPage, search, filter }) {
-  const [currentItems, setCurrentItems] = useState(null);
+function PaginatedItems({ itemsPerPage, state }) {
+  console.log(state.length);
   const [pageCount, setPageCount] = useState(0);
   const [itemOffset, setItemOffset] = useState(0);
-  const [itemsCount, setItemsCount] = useState(0);
-
-  console.log(pageCount);
-  console.log(currentItems);
-
-  useEffect(() => {
-    const endOffset = itemOffset + itemsPerPage;
-    setCurrentItems(INFOS.slice(itemOffset, endOffset));
-    setPageCount(Math.ceil(INFOS.length / itemsPerPage));
-    setItemsCount(INFOS.length);
-  }, [itemOffset, itemsPerPage]);
 
   const handlePageClick = (event) => {
-    const newOffset = (event.selected * itemsPerPage) % INFOS.length;
+    const newOffset = (event.selected * itemsPerPage) % state.length;
     setItemOffset(newOffset);
   };
 
   return (
     <>
       <Items
-        currentItems={currentItems}
-        search={search}
-        filter={filter}
-        setItemsCount={setItemsCount}
+        state={state}
+        itemsPerPage={itemsPerPage}
+        itemOffset={itemOffset}
+        setPageCount={setPageCount}
       />
       <ReactPaginate
         breakLabel="..."
@@ -115,8 +71,10 @@ function PaginatedItems({ itemsPerPage, search, filter }) {
         renderOnZeroPageCount={null}
         containerClassName="pagination"
         pageLinkClassName="page-num"
-        previousLinkClassName="page-num"
-        nextLinkClassName="page-num"
+        previousLinkClassName={`page-num ${pageCount == 1 ? "disable" : ""}`}
+        previousClassName="tagli"
+        nextLinkClassName={`page-num ${pageCount == 1 ? "disable" : ""}`}
+        nextClassName="tagli"
         activeLinkClassName="active"
       />
     </>
