@@ -9,12 +9,26 @@ export const Container = styled.div`
 export const FullWidthContainer = styled.div``;
 
 export const AboutContainer = styled.div`
-  margin: 2rem 0 0 0;
+  margin: 20px 0 0 0;
   width: 100%;
   height: auto;
   display: flex;
-  align-items: start;
-  justify-content: space-between;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  @media (min-width: ${breakpoints.mobileMax}) {
+    flex-wrap: nowrap;
+    padding-left: 2rem;
+    justify-content: space-between;
+  }
+`;
+
+export const SubContainer = styled.div`
+  margin: 70px 0 0 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   flex-wrap: wrap;
   @media (min-width: ${breakpoints.mobileMax}) {
     flex-wrap: nowrap;

@@ -88,4 +88,8 @@ export const Social = styled.div`
       }
     }
   }
+
+  @media (max-width: 300px) {
+    width: 15px;
+  }
 `;

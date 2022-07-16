@@ -12,7 +12,10 @@ function NavBar() {
 
   click ? disableBodyScroll(document) : enableBodyScroll(document);
 
-  const closeMenu = () => {setClick(false) enableBodyScroll(document);};
+  const closeMenu = () => {
+    setClick(false);
+    enableBodyScroll(document);
+  };
 
   return (
     <Nav>
