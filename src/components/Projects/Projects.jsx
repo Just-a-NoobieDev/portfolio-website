@@ -66,7 +66,12 @@ function Projects() {
       })}
 
       <Link to="/projects">
-        <ProjectLink>See More...</ProjectLink>
+        <ProjectLink onClick={() => {
+window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+}}>See More...</ProjectLink>
       </Link>
     </Container>
   );
