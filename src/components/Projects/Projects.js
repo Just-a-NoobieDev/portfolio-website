@@ -5,7 +5,7 @@ import { Container } from "../../utils/Container";
 import { breakpoints } from "../../utils/Media";
 import { TextContent, SubHeading, Paragraph } from "../../utils/Typography";
 import Project from "./Project";
-import infos from "../../data/data.json";
+import INFOS from "../../data/data.json";
 import imagesLink from "../../data/images";
 
 const ProjectLink = styled(Paragraph)`
@@ -48,7 +48,7 @@ function Projects() {
         </Paragraph>
       </TextContent>
 
-      {infos.map(({ id, title, description, stacks, type, repo, demoUrl }) => {
+      {INFOS.map(({ id, title, description, stacks, type, repo, demoUrl }) => {
         if (id <= 1) {
           return (
             <Project
