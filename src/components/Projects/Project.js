@@ -13,7 +13,7 @@ const ProjectDiv = styled.div`
   transition-duration: 0.3s;
 `;
 
-const ProjectImage = styled.img`
+const ProjectImage = styled.div`
   width: 100%;
   height: 300px;
   border-radius: 4px;

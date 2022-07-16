@@ -1,11 +1,12 @@
 import styled from "styled-components";
+import { Link } from "react-router-dom";
 
 import { Container } from "../../utils/Container";
 import { breakpoints } from "../../utils/Media";
 import { TextContent, SubHeading, Paragraph } from "../../utils/Typography";
 import Project from "./Project";
-import Test from "../../images/test_image.jpg";
-import { Link } from "react-router-dom";
+import infos from "../../data/data.json";
+import imagesLink from "../../data/images";
 
 const ProjectLink = styled(Paragraph)`
   font-weight: 700;
@@ -47,24 +48,23 @@ function Projects() {
         </Paragraph>
       </TextContent>
 
-      <Project
-        title="Test Project"
-        description="Test Description Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rerum quasi nihil consequuntur itaque laboriosam quas doloribus quos inventore eum tenetur!"
-        type="personal"
-        image={Test}
-        stacks={["test", "test", "test"]}
-        repo="/test"
-        live="/test"
-      />
-      <Project
-        title="Test Project"
-        description="Test Description Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rerum quasi nihil consequuntur itaque laboriosam quas doloribus quos inventore eum tenetur!"
-        type="personal"
-        image={Test}
-        stacks={["test", "test", "test"]}
-        repo="/test"
-        live="/test"
-      />
+      {infos.map(({ id, title, description, stacks, type, repo, demoUrl }) => {
+        if (id <= 1) {
+          return (
+            <Project
+              key={id}
+              title={title}
+              description={description}
+              stacks={stacks}
+              type={type}
+              repo={repo}
+              live={demoUrl}
+              image={`"${imagesLink[id]}"`}
+            />
+          );
+        }
+      })}
+
       <Link to="/projects">
         <ProjectLink>See More...</ProjectLink>
       </Link>
