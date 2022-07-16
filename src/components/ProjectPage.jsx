@@ -3,11 +3,11 @@ import { useEffect, useState } from "react";
 
 import INFOS from "../data/data.json";
 import imagesLink from "../data/images";
-import Project from "../components/Projects/Project";
+import Project from "./Projects/Project";
 import { Container } from "../utils/Container";
 import { Paragraph } from "../utils/Typography";
 
-function Items({ currentItems, search, filter, setZero }) {
+function Items({ currentItems, search, filter, setItemsCount }) {
   return (
     <>
       {currentItems &&
@@ -25,7 +25,7 @@ function Items({ currentItems, search, filter, setZero }) {
           } else if (
             val.stacks
               .map((item) => item.toLocaleLowerCase())
-              .includes(filter.toLowerCase())
+              .includes(filter.toLowerCase()) > 0
           ) {
             return val;
           }
@@ -47,6 +47,8 @@ function Items({ currentItems, search, filter, setZero }) {
                 .includes(filter.toLowerCase())
             ) {
               return val;
+            } else {
+              setItemsCount(0);
             }
           })
           .map(({ id, title, description, stacks, type, repo, demoUrl }) => {
@@ -65,7 +67,6 @@ function Items({ currentItems, search, filter, setZero }) {
           })
       ) : (
         <>
-          {setZero(true)}
           <Container>
             <Paragraph>No projects to show</Paragraph>
           </Container>
@@ -79,14 +80,16 @@ function PaginatedItems({ itemsPerPage, search, filter }) {
   const [currentItems, setCurrentItems] = useState(null);
   const [pageCount, setPageCount] = useState(0);
   const [itemOffset, setItemOffset] = useState(0);
-  const [zero, setZero] = useState(false);
+  const [itemsCount, setItemsCount] = useState(0);
 
-  console.log(zero);
+  console.log(pageCount);
+  console.log(currentItems);
 
   useEffect(() => {
     const endOffset = itemOffset + itemsPerPage;
     setCurrentItems(INFOS.slice(itemOffset, endOffset));
     setPageCount(Math.ceil(INFOS.length / itemsPerPage));
+    setItemsCount(INFOS.length);
   }, [itemOffset, itemsPerPage]);
 
   const handlePageClick = (event) => {
@@ -100,7 +103,7 @@ function PaginatedItems({ itemsPerPage, search, filter }) {
         currentItems={currentItems}
         search={search}
         filter={filter}
-        setZero={setZero}
+        setItemsCount={setItemsCount}
       />
       <ReactPaginate
         breakLabel="..."

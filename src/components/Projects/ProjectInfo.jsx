@@ -1,9 +1,12 @@
 import styled from "styled-components";
 import { breakpoints } from "../../utils/Media";
+import { Float } from "../../utils/Animation";
 
 const ProjectTable = styled.table`
   width: 100%;
   text-align: left;
+  opacity: 0;
+  animation: ${Float} 1s 0.2s forwards;
   th {
     text-align: center;
     font-style: normal;

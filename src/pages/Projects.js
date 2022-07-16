@@ -95,39 +95,6 @@ function ProjectsPage() {
         />
       </SubContainers>
       <Container>
-        {/* {INFOS.filter((val) => {
-          if (search == "") {
-            return val;
-          } else if (val.title.toLowerCase().includes(search.toLowerCase())) {
-            console.log(val);
-            return val;
-          }
-        })
-          .filter((val) => {
-            if (filter.toLowerCase() == "all") {
-              return val;
-            } else if (
-              val.stacks
-                .map((item) => item.toLocaleLowerCase())
-                .includes(filter.toLowerCase())
-            ) {
-              return val;
-            }
-          })
-          .map(({ id, title, description, stacks, type, repo, demoUrl }) => {
-            return (
-              <Project
-                key={id}
-                title={title}
-                description={description}
-                stacks={stacks}
-                type={type}
-                repo={repo}
-                live={demoUrl}
-                image={`"${imagesLink[id]}"`}
-              />
-            );
-          })} */}
         <PaginatedItems itemsPerPage={3} search={search} filter={filter} />
       </Container>
     </>
