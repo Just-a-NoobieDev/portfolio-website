@@ -1,12 +1,12 @@
 [
   {
     "id": 0,
-    "title": "Test Project",
-    "description": "Test Description Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rerum quasi nihil consequuntur itaque laboriosam quas doloribus quos inventore eum tenetur!",
-    "stacks": ["React", "test", "test"],
+    "title": "Personal Portfolio Website",
+    "description": "A web based portfolio that showcase all of the projects I created throughout my journey as a web developer. Building this projects is fun and I gain a lot of knowledge about React Js Library and styled-components.",
+    "stacks": ["React", "styled-components", "vercel", "git"],
     "type": "personal",
-    "repo": "/test",
-    "demoUrl": "/test"
+    "repo": "https://github.com/Just-a-NoobieDev/portfolio-website",
+    "demoUrl": "https://carljamesroxas.vercel.app/"
   },
   {
     "id": 1,
