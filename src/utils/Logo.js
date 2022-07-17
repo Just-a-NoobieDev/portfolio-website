@@ -11,10 +11,7 @@ const LogoImg = styled.div`
   background-repeat: no-repeat;
   cursor: pointer;
   animation: ${Float} 0.5s forwards;
-
-  @media (min-width: 760px) {
-    margin-right: 4rem;
-  }
+  margin-right: 1rem;
 `;
 
 function Logo() {

@@ -9,6 +9,7 @@ import Home from "./pages/Home";
 import Layout from "./utils/Layout";
 import ScrollToTop from "./components/ScrollToTop";
 import { LoadingScreen } from "./components/LoadingScreen";
+import Footer from "./components/Footer";
 
 function App() {
   const [loading, setLoading] = useState(false);
@@ -40,6 +41,7 @@ function App() {
             <Route path="*" exact element={<NotFound />} />
           </Routes>
           <ScrollToTop />
+          <Footer />
         </Layout>
       )}
     </>

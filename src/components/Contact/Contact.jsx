@@ -5,7 +5,10 @@ import { Paragraphss, Paragraphs, Containers, Email } from "./style";
 function Contact() {
   return (
     <Containers>
-      <SubContainer id="contact" style={{ marginTop: "8rem" }}>
+      <SubContainer
+        id="contact"
+        style={{ marginTop: "6rem", marginBottom: "8rem" }}
+      >
         <Paragraphs>HAVE A PROJECT IN MIND?</Paragraphs>
         <SubHeading
           style={{ fontWeight: 700, marginTop: "1rem", marginBottom: "1rem" }}
