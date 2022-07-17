@@ -17,7 +17,7 @@ function Hero() {
           <Line className="line"></Line>
           <SocialDiv>
             <a
-              title="Instagram - carllljamesss"
+              title="Git - carllljamesss"
               target="_blank"
               rel="noreferrer"
               href="https://github.com/Just-a-NoobieDev"
@@ -27,7 +27,7 @@ function Hero() {
               </Social>
             </a>
             <a
-              title="Instagram - carllljamesss"
+              title="Linkedin - carllljamesss"
               target="_blank"
               rel="noreferrer"
               href="https://www.linkedin.com/in/carl-james-r-b66350201/"
@@ -37,7 +37,7 @@ function Hero() {
               </Social>
             </a>
             <a
-              title="Instagram - carllljamesss"
+              title="Twitter - carllljamesss"
               target="_blank"
               rel="noreferrer"
               href="https://twitter.com/Carllljamessss"
