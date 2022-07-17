@@ -64,5 +64,5 @@ body {
 tr,
 td,
 th {
-  pointer-events: none;
+  cursor: default;
 }
