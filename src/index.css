@@ -60,3 +60,9 @@ body {
 .tagli {
   opacity: 0.6;
 }
+
+tr,
+td,
+th {
+  cursor: default;
+}
