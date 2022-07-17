@@ -14,6 +14,7 @@ const ProjectLink = styled(Paragraph)`
   text-align: center;
   line-height: 163.19%;
   margin-top: 2rem;
+  margin-bottom: 2rem;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   border-bottom: 2px solid transparent;
@@ -23,7 +24,7 @@ const ProjectLink = styled(Paragraph)`
     width: 119px;
     display: block;
     font-size: 18px;
-    margin: 0 auto;
+    margin: 2rem auto;
   }
   :hover {
     border-bottom: 2px solid #696969;
@@ -66,12 +67,16 @@ function Projects() {
       })}
 
       <Link to="/projects">
-        <ProjectLink onClick={() => {
-window.scrollTo({
-      top: 0,
-      behavior: "smooth",
-    });
-}}>See More...</ProjectLink>
+        <ProjectLink
+          onClick={() => {
+            window.scrollTo({
+              top: 0,
+              behavior: "smooth",
+            });
+          }}
+        >
+          See More...
+        </ProjectLink>
       </Link>
     </Container>
   );
