@@ -48,13 +48,18 @@ const Bold = styled.td`
       border-bottom: 2px solid #dd7834;
     }
 
+    &.disable {
+      pointer-events: none;
+      opacity: 0.6;
+    }
+
     @media (min-width: ${breakpoints.mobileMax}) {
       font-size: 16px;
     }
   }
 `;
 
-function ProjectInfo({ type, stacks, repo, live }) {
+function ProjectInfo({ type, stacks, repo, live, disable }) {
   return (
     <ProjectTable>
       <tbody>
@@ -81,8 +86,10 @@ function ProjectInfo({ type, stacks, repo, live }) {
                   <Bold>
                     <a href={repo}>Repository</a>
                   </Bold>
-                  <Bold>
-                    <a href={live}>View Site</a>
+                  <Bold className={`${live == "" ? "disable" : ""}`}>
+                    <a href={live}>{`${
+                      live == "" ? "No url" : "View Site"
+                    }`}</a>
                   </Bold>
                 </>
               )}
