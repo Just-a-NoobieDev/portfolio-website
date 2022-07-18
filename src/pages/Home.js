@@ -1,7 +1,7 @@
 import Hero from "../components/Hero/Hero";
 import LandingImage from "../components/LandingImage";
 import About from "../components/About/About";
-import Projects from "../components/Projects/Projects";
+import ProjectSection from "../components/Projects/ProjectSection";
 import Contact from "../components/Contact/Contact";
 
 function Home() {
@@ -10,7 +10,7 @@ function Home() {
       <Hero />
       <LandingImage />
       <About />
-      <Projects />
+      <ProjectSection />
       <Contact />
     </>
   );

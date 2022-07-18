@@ -19,7 +19,7 @@ import {
   TextContent,
   BtnLink,
 } from "../../utils/Typography";
-import { AboutImg, SkillContent, SkillTable } from "./styles";
+import { AboutImg, SkillContent, SkillTable, Row } from "./styles";
 
 function About() {
   return (
@@ -60,7 +60,7 @@ function About() {
         </TextContent>
         <SkillContent>
           <SkillTable>
-            <row>
+            <Row>
               <Paragraph>
                 <span>
                   <SiJavascript />
@@ -73,8 +73,8 @@ function About() {
                 </span>{" "}
                 React
               </Paragraph>
-            </row>
-            <row>
+            </Row>
+            <Row>
               <Paragraph>
                 <span>
                   <SiExpress />
@@ -87,8 +87,8 @@ function About() {
                 </span>{" "}
                 NodeJS
               </Paragraph>
-            </row>
-            <row>
+            </Row>
+            <Row>
               <Paragraph>
                 <span>
                   <SiHtml5 />
@@ -101,8 +101,8 @@ function About() {
                 </span>{" "}
                 CSS
               </Paragraph>
-            </row>
-            <row>
+            </Row>
+            <Row>
               <Paragraph>
                 <span>
                   <SiMongodb />
@@ -115,8 +115,8 @@ function About() {
                 </span>{" "}
                 SQL
               </Paragraph>
-            </row>
-            <row>
+            </Row>
+            <Row>
               <Paragraph>
                 <span>
                   <SiGit />
@@ -129,7 +129,7 @@ function About() {
                 </span>{" "}
                 PHP
               </Paragraph>
-            </row>
+            </Row>
           </SkillTable>
         </SkillContent>
       </SubContainer>

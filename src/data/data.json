@@ -7,50 +7,5 @@
     "type": "personal",
     "repo": "https://github.com/Just-a-NoobieDev/portfolio-website",
     "demoUrl": "/"
-  },
-  {
-    "id": 1,
-    "title": "Test Project",
-    "description": "Test Description Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rerum quasi nihil consequuntur itaque laboriosam quas doloribus quos inventore eum tenetur!",
-    "stacks": ["test", "test", "test"],
-    "type": "personal",
-    "repo": "/test",
-    "demoUrl": "/test"
-  },
-  {
-    "id": 2,
-    "title": "Test Project",
-    "description": "Test Description Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rerum quasi nihil consequuntur itaque laboriosam quas doloribus quos inventore eum tenetur!",
-    "stacks": ["test", "test", "test"],
-    "type": "personal",
-    "repo": "/test",
-    "demoUrl": "/test"
-  },
-  {
-    "id": 3,
-    "title": "Test Project",
-    "description": "Test Description Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rerum quasi nihil consequuntur itaque laboriosam quas doloribus quos inventore eum tenetur!",
-    "stacks": ["test", "test", "test"],
-    "type": "personal",
-    "repo": "/test",
-    "demoUrl": "/test"
-  },
-  {
-    "id": 4,
-    "title": "Test Project",
-    "description": "Test Description Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rerum quasi nihil consequuntur itaque laboriosam quas doloribus quos inventore eum tenetur!",
-    "stacks": ["test", "test", "test"],
-    "type": "personal",
-    "repo": "/test",
-    "demoUrl": "/test"
-  },
-  {
-    "id": 5,
-    "title": "Test Project",
-    "description": "Test Description Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rerum quasi nihil consequuntur itaque laboriosam quas doloribus quos inventore eum tenetur!",
-    "stacks": ["React", "test", "test"],
-    "type": "personal",
-    "repo": "/test",
-    "demoUrl": "/test"
   }
 ]

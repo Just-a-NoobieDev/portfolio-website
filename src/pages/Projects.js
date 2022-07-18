@@ -1,15 +1,13 @@
 import { useState, useEffect } from "react";
 import styled from "styled-components";
 
-import Project from "../components/Projects/Project";
-import SearchBar from "../components/SearchBar";
-
 import INFOS from "../data/data.json";
-import imagesLink from "../data/images";
+
+import SearchBar from "../components/SearchBar";
+import ProjectPaginate from "../components/Projects/ProjectPaginate";
 import { Container, SubContainer } from "../utils/Container";
 import { HeadingSec } from "../utils/Typography";
 import { breakpoints } from "../utils/Media";
-import PaginatedItems from "../components/ProjectPage";
 import { BtnLink } from "../utils/Typography";
 
 const Buttons = styled(BtnLink)`
@@ -68,11 +66,9 @@ const SubContainers = styled(SubContainer)`
 function ProjectsPage() {
   const [dataArr, setDataArr] = useState(INFOS);
   const [search, setSearch] = useState("");
-  const [active, setActive] = useState("all");
   const [filter, setFilter] = useState("all");
 
   const handleClick = (e) => {
-    setActive(e.target.id);
     setFilter(e.target.id);
   };
 
@@ -100,8 +96,6 @@ function ProjectsPage() {
     setDataArr(filteredData);
   }, [search, filter]);
 
-  // console.log(dataArr);
-
   return (
     <>
       <Containers>
@@ -111,49 +105,49 @@ function ProjectsPage() {
       <SubContainers>
         <Buttons
           onClick={handleClick}
-          className={`${active == "all" ? "active" : ""}`}
+          className={`${filter == "all" ? "active" : ""}`}
           id="all"
         >
           All
         </Buttons>
         <Buttons
           onClick={handleClick}
-          className={`${active == "react" ? "active" : ""}`}
+          className={`${filter == "react" ? "active" : ""}`}
           id="react"
         >
           React
         </Buttons>
         <Buttons
           onClick={handleClick}
-          className={`${active == "mern" ? "active" : ""}`}
+          className={`${filter == "mern" ? "active" : ""}`}
           id="mern"
         >
           MERN
         </Buttons>
         <Buttons
           onClick={handleClick}
-          className={`${active == "html & css" ? "active" : ""}`}
+          className={`${filter == "html & css" ? "active" : ""}`}
           id="html & css"
         >
           HTML & CSS
         </Buttons>
         <Buttons
           onClick={handleClick}
-          className={`${active == "vanilla js" ? "active" : ""}`}
+          className={`${filter == "vanilla js" ? "active" : ""}`}
           id="vanilla js"
         >
           Vanilla JS
         </Buttons>
         <Buttons
           onClick={handleClick}
-          className={`${active == "php & mysql" ? "active" : ""}`}
+          className={`${filter == "php & mysql" ? "active" : ""}`}
           id="php & mysql"
         >
           PHP & MySQL
         </Buttons>
       </SubContainers>
       <Container>
-        <PaginatedItems state={dataArr} itemsPerPage={3} />
+        <ProjectPaginate state={dataArr} itemsPerPage={3} />
       </Container>
     </>
   );

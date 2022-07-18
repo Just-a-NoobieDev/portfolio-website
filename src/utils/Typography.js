@@ -18,6 +18,7 @@ export const Paragraph = styled.p`
   font-size: 16px;
   line-height: 184.69%;
   letter-spacing: 0.03em;
+  cursor: default;
   a {
     border-bottom: 2px solid transparent;
     transition: 0.3s;
@@ -36,6 +37,7 @@ export const BtnLink = styled(Paragraph)`
   letter-spacing: 0.03em;
   text-transform: uppercase;
   padding: 15px;
+  cursor: pointer;
   border: 1.5px solid #3e3e3e;
   transition: 0.3s;
   :hover {
@@ -54,6 +56,8 @@ export const HeadingMain = styled.h1`
   letter-spacing: 0.03em;
   margin-bottom: 0;
   margin-left: 0px;
+  cursor: default;
+
   @media (min-width: ${breakpoints.mobileMax}) {
     font-size: 60px;
     margin-bottom: 0;
@@ -93,6 +97,7 @@ export const SubHeading = styled.h2`
   line-height: 120%;
   letter-spacing: 0.03em;
   transform: translateY(30px);
+  cursor: default;
   opacity: 0;
   animation: ${Float} 1s 0.2s forwards;
   @media (min-width: ${breakpoints.mobileMax}) {

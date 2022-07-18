@@ -1,29 +1,34 @@
-import { SubContainer } from "../../utils/Container";
 import { SubHeading } from "../../utils/Typography";
-import { Paragraphss, Paragraphs, Containers, Email } from "./style";
+import {
+  ContactParagraph,
+  SubHeadingGray,
+  ContactContainer,
+  SubContainer,
+  Email,
+} from "./style";
 
 function Contact() {
   return (
-    <Containers>
+    <ContactContainer>
       <SubContainer
         id="contact"
         style={{ marginTop: "6rem", marginBottom: "8rem" }}
       >
-        <Paragraphs>HAVE A PROJECT IN MIND?</Paragraphs>
+        <SubHeadingGray>HAVE A PROJECT IN MIND?</SubHeadingGray>
         <SubHeading
           style={{ fontWeight: 700, marginTop: "1rem", marginBottom: "1rem" }}
         >
           LET’S ACHIEVE TOGETHER
         </SubHeading>
-        <Paragraphss>
+        <ContactParagraph>
           Feel free to send me an email if you are looking for a developer, have
           a question, or just want to connect.
-        </Paragraphss>
+        </ContactParagraph>
         <a href="mailto:carljames.roxas.m@gmail.com" target="_blank">
           <Email>carljames.roxas.m@gmail.com</Email>
         </a>
       </SubContainer>
-    </Containers>
+    </ContactContainer>
   );
 }
 

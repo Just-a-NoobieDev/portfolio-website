@@ -89,7 +89,7 @@ function Footer() {
           rel="noreferrer"
           href="https://www.linkedin.com/in/carl-james-r-b66350201/"
         >
-          likedin
+          linkedin
         </Links>
         <Links
           title="Twitter - carllljamesss"

@@ -1,10 +1,11 @@
-import ReactPaginate from "react-paginate";
 import { useEffect, useState } from "react";
+import ReactPaginate from "react-paginate";
 
-import imagesLink from "../data/images";
-import Project from "./Projects/Project";
-import { Container } from "../utils/Container";
-import { Paragraph } from "../utils/Typography";
+import imagesLink from "../../data/images";
+
+import Project from "./Project";
+import { Container } from "../../utils/Container";
+import { Paragraph } from "../../utils/Typography";
 
 function Items({ state, itemsPerPage, itemOffset, setPageCount }) {
   const [split, setSplit] = useState(null);
@@ -43,8 +44,7 @@ function Items({ state, itemsPerPage, itemOffset, setPageCount }) {
   );
 }
 
-function PaginatedItems({ itemsPerPage, state }) {
-  console.log(state.length);
+function ProjectPaginate({ itemsPerPage, state }) {
   const [pageCount, setPageCount] = useState(0);
   const [itemOffset, setItemOffset] = useState(0);
 
@@ -85,4 +85,4 @@ function PaginatedItems({ itemsPerPage, state }) {
   );
 }
 
-export default PaginatedItems;
+export default ProjectPaginate;

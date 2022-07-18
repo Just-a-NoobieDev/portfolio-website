@@ -64,3 +64,5 @@ export const SkillTable = styled.div`
     }
   }
 `;
+
+export const Row = styled.div``;

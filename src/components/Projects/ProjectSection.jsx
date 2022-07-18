@@ -1,40 +1,14 @@
-import styled from "styled-components";
 import { Link } from "react-router-dom";
 
-import { Container } from "../../utils/Container";
-import { breakpoints } from "../../utils/Media";
-import { TextContent, SubHeading, Paragraph } from "../../utils/Typography";
-import Project from "./Project";
 import INFOS from "../../data/data.json";
 import imagesLink from "../../data/images";
 
-const ProjectLink = styled(Paragraph)`
-  font-weight: 700;
-  font-size: 14px;
-  text-align: center;
-  line-height: 163.19%;
-  margin-top: 2rem;
-  margin-bottom: 2rem;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  border-bottom: 2px solid transparent;
-  transition: border-bottom 0.3s;
+import Project from "./Project";
+import { Container } from "../../utils/Container";
+import { TextContent, SubHeading, Paragraph } from "../../utils/Typography";
+import { ProjectLink } from "./styles";
 
-  @media (min-width: ${breakpoints.mobileMax}) {
-    width: 119px;
-    display: block;
-    font-size: 18px;
-    margin: 2rem auto;
-  }
-  :hover {
-    border-bottom: 2px solid #696969;
-  }
-  span {
-    font-size: 20px;
-  }
-`;
-
-function Projects() {
+function ProjectSection() {
   return (
     <Container style={{ marginTop: "150px" }}>
       <TextContent style={{ maxWidth: "750px", marginBottom: "5rem" }}>
@@ -75,11 +49,11 @@ function Projects() {
             });
           }}
         >
-          See More...
+          View All
         </ProjectLink>
       </Link>
     </Container>
   );
 }
 
-export default Projects;
+export default ProjectSection;
