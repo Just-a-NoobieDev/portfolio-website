@@ -105,42 +105,42 @@ function ProjectsPage() {
       <SubContainers>
         <Buttons
           onClick={handleClick}
-          className={`${filter == "all" ? "active" : ""}`}
+          className={`${filter.toLowerCase() == "all" ? "active" : ""}`}
           id="all"
         >
           All
         </Buttons>
         <Buttons
           onClick={handleClick}
-          className={`${filter == "react" ? "active" : ""}`}
+          className={`${filter.toLowerCase() == "react" ? "active" : ""}`}
           id="react"
         >
           React
         </Buttons>
         <Buttons
           onClick={handleClick}
-          className={`${filter == "mern" ? "active" : ""}`}
+          className={`${filter.toLowerCase() == "mern" ? "active" : ""}`}
           id="mern"
         >
           MERN
         </Buttons>
         <Buttons
           onClick={handleClick}
-          className={`${filter == "html & css" ? "active" : ""}`}
+          className={`${filter.toLowerCase() == "html & css" ? "active" : ""}`}
           id="html & css"
         >
           HTML & CSS
         </Buttons>
         <Buttons
           onClick={handleClick}
-          className={`${filter == "vanilla js" ? "active" : ""}`}
+          className={`${filter.toLowerCase() == "vanilla js" ? "active" : ""}`}
           id="vanilla js"
         >
           Vanilla JS
         </Buttons>
         <Buttons
           onClick={handleClick}
-          className={`${filter == "php & mysql" ? "active" : ""}`}
+          className={`${filter.toLowerCase() == "php & mysql" ? "active" : ""}`}
           id="php & mysql"
         >
           PHP & MySQL
