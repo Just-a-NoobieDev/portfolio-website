@@ -1,4 +1,4 @@
-#Carl James Portfolio Website
+# Carl James Portfolio Website
 
 ![Image of Carl James Landing Page](https://raw.githubusercontent.com/Just-a-NoobieDev/portfolio-website/main/homeview.png)
 
@@ -28,5 +28,4 @@ Check it out [live](https://carljamesroxas.vercel.app/)
 
 ---
 
-[⬆ Back to the Top](#Carl James Portfolio Website
-)<br>
+[⬆ Back to the Top](# Carl James Portfolio Website)<br>
