@@ -1,4 +1,4 @@
-# Carl James Portfolio Website
+# Portfolio-Website
 
 ![Image of Carl James Landing Page](https://raw.githubusercontent.com/Just-a-NoobieDev/portfolio-website/main/homeview.png)
 
@@ -7,7 +7,7 @@
 Check it out [live](https://carljamesroxas.vercel.app/)
 
 ## Overview
-- This project has its sufficient feature for a portfolio website
+> This project has its sufficient feature for a portfolio website
 - About Page
 - Project Page
 - Contact Section 
@@ -28,4 +28,4 @@ Check it out [live](https://carljamesroxas.vercel.app/)
 
 ---
 
-[⬆ Back to the Top](# Carl James Portfolio Website)<br>
+[⬆ Back to the Top](#Portfolio-Website)</br>
