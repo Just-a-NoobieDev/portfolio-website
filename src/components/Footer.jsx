@@ -1,10 +1,9 @@
-import styled from "styled-components";
-import { Link } from "react-router-dom";
-
 import { Container } from "../utils/Container";
+import { Link } from "react-router-dom";
 import Logo from "../utils/Logo";
-import { SocialDiv } from "./Hero/styles";
 import { Paragraph } from "../utils/Typography";
+import { SocialDiv } from "./Hero/styles";
+import styled from "styled-components";
 
 const Containers = styled(Container)`
   margin-bottom: 0;
@@ -70,8 +69,7 @@ function Footer() {
           <Logo />
         </Link>
         <Paragraphs>
-          &copy; Copyright Carl James Roxas {date.getFullYear()} | All Rights
-          Reserved
+          &copy; {date.getFullYear()} Carl James Roxas | All Rights Reserved
         </Paragraphs>
       </Extra>
       <SocialDivs>
