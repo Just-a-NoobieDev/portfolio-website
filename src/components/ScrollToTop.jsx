@@ -1,7 +1,6 @@
-import { useState } from "react";
-import { FaArrowCircleUp } from "react-icons/fa";
-
 import { Button } from "../utils/OtherUtil";
+import { FaArrowCircleUp } from "react-icons/fa";
+import { useState } from "react";
 
 function ScrollToTop() {
   const [visible, setVisible] = useState(false);
@@ -19,8 +18,6 @@ function ScrollToTop() {
     window.scrollTo({
       top: 0,
       behavior: "smooth",
-      /* you can also use 'auto' behaviour
-         in place of 'smooth' */
     });
   };
 

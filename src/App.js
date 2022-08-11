@@ -1,15 +1,15 @@
-import React, { useState, useEffect } from "react";
-import { Routes, Route, useLocation } from "react-router-dom";
+import React, { useEffect, useState } from "react";
+import { Route, Routes, useLocation } from "react-router-dom";
 
-import NavBar from "./components/NavBar/NavBar";
-import ProjectNavBar from "./components/NavBar/ProjectNavBar";
-import NotFound from "./components/NotFound";
-import ProjectsPage from "./pages/Projects";
+import Footer from "./components/Footer";
 import Home from "./pages/Home";
 import Layout from "./utils/Layout";
-import ScrollToTop from "./components/ScrollToTop";
 import { LoadingScreen } from "./components/LoadingScreen";
-import Footer from "./components/Footer";
+import NavBar from "./components/NavBar/NavBar";
+import NotFound from "./components/NotFound";
+import ProjectNavBar from "./components/NavBar/ProjectNavBar";
+import ProjectsPage from "./pages/Projects";
+import ScrollToTop from "./components/ScrollToTop";
 
 function App() {
   const [loading, setLoading] = useState(false);
@@ -24,13 +24,13 @@ function App() {
     setLoading(true);
     setTimeout(() => {
       setLoading(false);
-    }, 2500);
+    }, 3000);
   }, []);
 
   return (
     <>
       {loading ? (
-        <LoadingScreen loading={loading} />
+        <LoadingScreen />
       ) : (
         <Layout>
           {isProject ? <NavBar /> : <ProjectNavBar />}

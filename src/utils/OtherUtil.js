@@ -1,13 +1,12 @@
-import styled from "styled-components";
-
 import { bounce } from "./Animation";
+import styled from "styled-components";
 
 export const Button = styled.div`
   position: fixed;
   right: 20px;
   bottom: 10%;
-  height: 20px;
-  font-size: 3rem;
+  height: 15px;
+  font-size: 2rem;
   z-index: 1000;
   cursor: pointer;
   color: #3e3e3e;
