@@ -4,26 +4,29 @@
     "title": "Personal Portfolio Website",
     "description": "A web based portfolio that showcase all of the projects I created throughout my journey as a web developer. Building this projects is fun and I gain a lot of knowledge about React Js Library and styled-components.",
     "stacks": ["React", "styled-components", "vercel", "git"],
+    "status": "Done",
     "type": "personal",
     "repo": "https://github.com/Just-a-NoobieDev/portfolio-website",
     "demoUrl": "/"
   },
   {
     "id": 1,
-    "title": "Employee Record Management System",
-    "description": "My very first taste of backend development using PHP and MySQL. This project is our final requirements for our subject Advance Database System. For educational purposes, this system is not a full pledge employee management system, this is only a very simple system to perform CRUD operations and apply MySQL clauses. Unfortunately this system is not yer responsive so we advise it to view the live link in laptop devices that has a width resolution of 1024px to 1920px.",
-    "stacks": ["HTML & CSS", "PHP & MySQL", "git"],
-    "type": "Group Project",
-    "repo": "httpss://github.com/Just-a-NoobieDev/ADSProjects-Employee--Record-Management-System",
-    "demoUrl": "http://erms.rf.gd/"
-  },
-  {
-    "idid": 2,
     "title": "CryptoWhales",
     "description": "A cryptocurrency web application that delivers the latest news and cryptocurrency prices with data from different public API's from RapidAPI such as Coinranking API, Bing News Search API and Coingecko API.",
-    "stacks": ["React", "styled-components","git", "vercel"],
+    "stacks": ["React", "styled-components", "git", "vercel"],
+    "status": "Ongoing",
     "type": "personal",
     "repo": "https://github.com/Just-a-NoobieDev/cryptowhales",
     "demoUrl": "https://cryptowhales.vercel.app/"
+  },
+  {
+    "id": 2,
+    "title": "Employee Record Management System",
+    "description": "My very first taste of backend development using PHP and MySQL. This project is our final requirements for our subject Advance Database System. For educational purposes, this system is not a full pledge employee management system, this is only a very simple system to perform CRUD operations and apply MySQL clauses. Unfortunately this system is not yer responsive so we advise it to view the live link in laptop devices that has a width resolution of 1024px to 1920px.",
+    "stacks": ["HTML & CSS", "PHP & MySQL", "git"],
+    "status": "Done",
+    "type": "Group Project",
+    "repo": "https://github.com/Just-a-NoobieDev/ADSProjects-Employee--Record-Management-System",
+    "demoUrl": "http://erms.rf.gd/"
   }
 ]

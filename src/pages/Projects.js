@@ -1,17 +1,16 @@
-import { useState, useEffect } from "react";
+import { Container, SubContainer } from "../utils/Container";
+import { useEffect, useState } from "react";
+
+import { BtnLink } from "../utils/Typography";
+import { HeadingSec } from "../utils/Typography";
+import INFOS from "../data/data.json";
+import ProjectPaginate from "../components/Projects/ProjectPaginate";
+import SearchBar from "../components/SearchBar";
+import { breakpoints } from "../utils/Media";
 import styled from "styled-components";
 
-import INFOS from "../data/data.json";
-
-import SearchBar from "../components/SearchBar";
-import ProjectPaginate from "../components/Projects/ProjectPaginate";
-import { Container, SubContainer } from "../utils/Container";
-import { HeadingSec } from "../utils/Typography";
-import { breakpoints } from "../utils/Media";
-import { BtnLink } from "../utils/Typography";
-
 const Buttons = styled(BtnLink)`
-  width: 90px;
+  width: 150px;
   text-align: center;
   padding: 0.5rem 0.7rem;
   font-size: 12px;
@@ -57,7 +56,7 @@ const SubContainers = styled(SubContainer)`
   justify-content: center;
 
   @media (min-width: ${breakpoints.mobileMax}) {
-    width: 70%;
+    width: 80%;
     justify-content: space-evenly;
     margin-top: 0;
   }
@@ -73,15 +72,16 @@ function ProjectsPage() {
   };
 
   const searchedData = INFOS.filter((val) => {
-    if (search == "") {
+    if (search === "") {
       return val;
     } else if (val.title.toLowerCase().includes(search.toLowerCase())) {
       return val;
     }
+    return null;
   });
 
   const filteredData = searchedData.filter((val) => {
-    if (filter.toLowerCase() == "all") {
+    if (filter.toLowerCase() === "all") {
       return dataArr;
     } else if (
       val.stacks
@@ -90,11 +90,12 @@ function ProjectsPage() {
     ) {
       return val;
     }
+    return null;
   });
 
   useEffect(() => {
     setDataArr(filteredData);
-  }, [search, filter]);
+  }, [search, filteredData]);
 
   return (
     <>
@@ -105,42 +106,44 @@ function ProjectsPage() {
       <SubContainers>
         <Buttons
           onClick={handleClick}
-          className={`${filter.toLowerCase() == "all" ? "active" : ""}`}
+          className={`${filter.toLowerCase() === "all" ? "active" : ""}`}
           id="all"
         >
           All
         </Buttons>
         <Buttons
           onClick={handleClick}
-          className={`${filter.toLowerCase() == "react" ? "active" : ""}`}
+          className={`${filter.toLowerCase() === "react" ? "active" : ""}`}
           id="react"
         >
           React
         </Buttons>
         <Buttons
           onClick={handleClick}
-          className={`${filter.toLowerCase() == "mern" ? "active" : ""}`}
+          className={`${filter.toLowerCase() === "mern" ? "active" : ""}`}
           id="mern"
         >
           MERN
         </Buttons>
         <Buttons
           onClick={handleClick}
-          className={`${filter.toLowerCase() == "html & css" ? "active" : ""}`}
+          className={`${filter.toLowerCase() === "html & css" ? "active" : ""}`}
           id="html & css"
         >
           HTML & CSS
         </Buttons>
         <Buttons
           onClick={handleClick}
-          className={`${filter.toLowerCase() == "vanilla js" ? "active" : ""}`}
+          className={`${filter.toLowerCase() === "vanilla js" ? "active" : ""}`}
           id="vanilla js"
         >
           Vanilla JS
         </Buttons>
         <Buttons
           onClick={handleClick}
-          className={`${filter.toLowerCase() == "php & mysql" ? "active" : ""}`}
+          className={`${
+            filter.toLowerCase() === "php & mysql" ? "active" : ""
+          }`}
           id="php & mysql"
         >
           PHP & MySQL

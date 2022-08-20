@@ -1,8 +1,3 @@
-import ProjectInfo from "./ProjectInfo";
-
-import { SubContainer } from "../../utils/Container";
-import { SubHeading } from "../../utils/Typography";
-
 import {
   ProjectDiv,
   ProjectImage,
@@ -11,7 +6,20 @@ import {
   TitleDescDiv,
 } from "./styles";
 
-function Project({ title, description, image, type, stacks, repo, live }) {
+import ProjectInfo from "./ProjectInfo";
+import { SubContainer } from "../../utils/Container";
+import { SubHeading } from "../../utils/Typography";
+
+function Project({
+  title,
+  description,
+  image,
+  type,
+  stacks,
+  repo,
+  live,
+  status,
+}) {
   return (
     <SubContainer>
       <ProjectDiv>
@@ -21,7 +29,13 @@ function Project({ title, description, image, type, stacks, repo, live }) {
             <SubHeading>{title}</SubHeading>
             <ProjectParagraph>{description}</ProjectParagraph>
           </TitleDescDiv>
-          <ProjectInfo type={type} stacks={stacks} repo={repo} live={live} />
+          <ProjectInfo
+            type={type}
+            stacks={stacks}
+            repo={repo}
+            live={live}
+            status={status}
+          />
         </ProjectInfoDiv>
       </ProjectDiv>
     </SubContainer>

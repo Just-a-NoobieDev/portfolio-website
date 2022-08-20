@@ -1,14 +1,16 @@
-import { Link } from "react-router-dom";
+import { Paragraph, SubHeading, TextContent } from "../../utils/Typography";
 
-import INFOS from "../../data/data.json";
-import imagesLink from "../../data/images";
-
-import Project from "./Project";
 import { Container } from "../../utils/Container";
-import { TextContent, SubHeading, Paragraph } from "../../utils/Typography";
+import INFOS from "../../data/data.json";
+import { Link } from "react-router-dom";
+import Project from "./Project";
 import { ProjectLink } from "./styles";
+import imagesLink from "../../data/images";
+import { useState } from "react";
 
 function ProjectSection() {
+  const [data, setData] = useState(INFOS);
+
   return (
     <Container style={{ marginTop: "150px" }}>
       <TextContent style={{ maxWidth: "750px", marginBottom: "5rem" }}>
@@ -23,22 +25,27 @@ function ProjectSection() {
         </Paragraph>
       </TextContent>
 
-      {INFOS.map(({ id, title, description, stacks, type, repo, demoUrl }) => {
-        if (id <= 1) {
-          return (
-            <Project
-              key={id}
-              title={title}
-              description={description}
-              stacks={stacks}
-              type={type}
-              repo={repo}
-              live={demoUrl}
-              image={`"${imagesLink[id]}"`}
-            />
-          );
-        }
-      })}
+      {data &&
+        data.map(
+          ({ id, title, description, stacks, type, repo, demoUrl, status }) => {
+            if (id <= 1) {
+              return (
+                <Project
+                  key={id}
+                  title={title}
+                  description={description}
+                  stacks={stacks}
+                  type={type}
+                  repo={repo}
+                  live={demoUrl}
+                  image={`"${imagesLink[id]}"`}
+                  status={status}
+                />
+              );
+            }
+            return null;
+          }
+        )}
 
       <Link to="/projects">
         <ProjectLink

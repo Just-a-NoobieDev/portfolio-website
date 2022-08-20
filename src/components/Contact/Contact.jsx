@@ -1,11 +1,12 @@
-import { SubHeading } from "../../utils/Typography";
 import {
-  ContactParagraph,
-  SubHeadingGray,
   ContactContainer,
-  SubContainer,
+  ContactParagraph,
   Email,
+  SubContainer,
+  SubHeadingGray,
 } from "./style";
+
+import { SubHeading } from "../../utils/Typography";
 
 function Contact() {
   return (
@@ -24,7 +25,11 @@ function Contact() {
           Feel free to send me an email if you are looking for a developer, have
           a question, or just want to connect.
         </ContactParagraph>
-        <a href="mailto:carljames.roxas.m@gmail.com" target="_blank">
+        <a
+          href="mailto:carljames.roxas.m@gmail.com"
+          target="_blank"
+          rel="noreferrer"
+        >
           <Email>carljames.roxas.m@gmail.com</Email>
         </a>
       </SubContainer>

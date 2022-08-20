@@ -1,11 +1,11 @@
-import {
-  FaGithub,
-  FaLinkedin,
-  FaTwitter,
-  FaInstagramSquare,
-} from "react-icons/fa";
+  import {
+    FaGithub,
+    FaInstagramSquare,
+    FaLinkedin,
+    FaTwitter,
+  } from "react-icons/fa";
+import { HeroElements, HeroWrapCont, Line, Social, SocialDiv } from "./styles";
 
-import { HeroWrapCont, HeroElements, Line, Social, SocialDiv } from "./styles";
 import { Container } from "../../utils/Container";
 import { HeadingMain } from "../../utils/Typography";
 
@@ -63,7 +63,7 @@ function Hero() {
             Hello, I am Carl James. <br />
           </span>
           <span>
-            Self taught <span className="blue">Web Developer</span> , <br />{" "}
+            A passionate <span className="blue">Web Developer</span> , <br />{" "}
           </span>{" "}
           <span>and a Student.</span>
         </HeadingMain>

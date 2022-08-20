@@ -1,25 +1,24 @@
-import {
-  SiJavascript,
-  SiHtml5,
-  SiReact,
-  SiExpress,
-  SiNodedotjs,
-  SiCss3,
-  SiMongodb,
-  SiMysql,
-  SiGit,
-  SiPhp,
-} from "react-icons/si";
-
 import { AboutContainer, Container, SubContainer } from "../../utils/Container";
+import { AboutImg, Row, SkillContent, SkillTable } from "./styles";
 import {
+  BtnLink,
   Paragraph,
   SubHeading,
-  TextContentWrap,
   TextContent,
-  BtnLink,
+  TextContentWrap,
 } from "../../utils/Typography";
-import { AboutImg, SkillContent, SkillTable, Row } from "./styles";
+import {
+  SiCss3,
+  SiExpress,
+  SiGit,
+  SiHtml5,
+  SiJavascript,
+  SiMongodb,
+  SiMysql,
+  SiNodedotjs,
+  SiPhp,
+  SiReact,
+} from "react-icons/si";
 
 function About() {
   return (
@@ -42,7 +41,7 @@ function About() {
             professional web developer and to build many applications that will
             make other peoples life easier is my ultimate goal.
           </Paragraph>
-          <a href="" download="carljamesroxas-resume">
+          <a href="/" download="carljamesroxas-resume">
             <BtnLink>Download Resume</BtnLink>
           </a>
         </TextContentWrap>

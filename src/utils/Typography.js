@@ -1,7 +1,6 @@
-import styled from "styled-components";
-
-import { breakpoints } from "./Media";
 import { Float } from "./Animation";
+import { breakpoints } from "./Media";
+import styled from "styled-components";
 
 export const QUERIES = {
   medium: `min-width: 1092px`,
@@ -59,7 +58,7 @@ export const HeadingMain = styled.h1`
   cursor: default;
 
   @media (min-width: ${breakpoints.mobileMax}) {
-    font-size: 60px;
+    font-size: 55px;
     margin-bottom: 0;
     margin-left: 50px;
   }

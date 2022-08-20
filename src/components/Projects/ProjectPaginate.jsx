@@ -1,11 +1,10 @@
 import { useEffect, useState } from "react";
-import ReactPaginate from "react-paginate";
 
-import imagesLink from "../../data/images";
-
-import Project from "./Project";
 import { Container } from "../../utils/Container";
 import { Paragraph } from "../../utils/Typography";
+import Project from "./Project";
+import ReactPaginate from "react-paginate";
+import imagesLink from "../../data/images";
 
 function Items({ state, itemsPerPage, itemOffset, setPageCount }) {
   const [split, setSplit] = useState(null);
@@ -14,7 +13,7 @@ function Items({ state, itemsPerPage, itemOffset, setPageCount }) {
     const endOffset = itemOffset + itemsPerPage;
     setSplit(state.slice(itemOffset, endOffset));
     setPageCount(Math.ceil(state.length / itemsPerPage));
-  }, [itemOffset, itemsPerPage, state]);
+  }, [itemOffset, itemsPerPage, state, setPageCount]);
 
   return (
     <>
@@ -75,9 +74,9 @@ function ProjectPaginate({ itemsPerPage, state }) {
         renderOnZeroPageCount={null}
         containerClassName="pagination"
         pageLinkClassName="page-num"
-        previousLinkClassName={`page-num ${pageCount == 1 ? "disable" : ""}`}
+        previousLinkClassName={`page-num ${pageCount === 1 ? "disable" : ""}`}
         previousClassName="tagli"
-        nextLinkClassName={`page-num ${pageCount == 1 ? "disable" : ""}`}
+        nextLinkClassName={`page-num ${pageCount === 1 ? "disable" : ""}`}
         nextClassName="tagli"
         activeLinkClassName="active"
       />

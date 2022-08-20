@@ -1,4 +1,5 @@
 import styled, { keyframes } from "styled-components/macro";
+
 import { breakpoints } from "./Media";
 
 const FadeOut = keyframes`
@@ -20,13 +21,13 @@ const Layout = styled.div`
     text-decoration: none;
   }
   @media (min-width: ${breakpoints.tabletMin}) {
-    max-width: 940px;
-    padding: 20px;
-    margin: 75px auto;
+    max-width: 980px;
+    padding: 10px;
+    margin: 55px auto;
   }
   @media (min-width: ${breakpoints.desktopMin}) {
     max-width: 1200px;
-    padding: 20px;
+    padding: 10px;
     margin: 75px auto;
   }
 `;
