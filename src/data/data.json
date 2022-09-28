@@ -21,6 +21,16 @@
   },
   {
     "id": 2,
+    "title": "MERN Stack Authentication System",
+    "description": "My first step of becoming a full stack developer. This project is my first ever mern stack application and I use bunch of packages to build this awesome stuff. Making this was very special not only because it is my first time building a full stack app but it is because I successfully built it without reaching help from youtube tutorials.",
+    "stacks": ["React", "MERN", "styled-components", "git", "vercel"],
+    "status": "Done",
+    "type": "Group Project",
+    "repo": "https://github.com/Just-a-NoobieDev/ADSProjects-Employee--Record-Management-System",
+    "demoUrl": "http://erms.rf.gd/"
+  },
+  {
+    "id": 3,
     "title": "Employee Record Management System",
     "description": "My very first taste of backend development using PHP and MySQL. This project is our final requirements for our subject Advance Database System. For educational purposes, this system is not a full pledge employee management system, this is only a very simple system to perform CRUD operations and apply MySQL clauses. Unfortunately this system is not yer responsive so we advise it to view the live link in laptop devices that has a width resolution of 1024px to 1920px.",
     "stacks": ["HTML & CSS", "PHP & MySQL", "git"],
@@ -30,7 +40,7 @@
     "demoUrl": "http://erms.rf.gd/"
   },
   {
-    "id": 3,
+    "id": 4,
     "title": "Netflix clone",
     "description": "This project is one of my earliest reactjs projects. This is a netflix clone to learn the react js framework and integrate API to it. I learn a lot when building this project and I enjoy making it.",
     "stacks": ["React", "API", "git"],
@@ -40,7 +50,7 @@
     "demoUrl": "https://netflixclone-landing.vercel.app/"
   },
   {
-    "id": 4,
+    "id": 5,
     "title": "Covid 19 Case Tracker",
     "description": "My very first ever api project using only HTML, CSS, and vanilla Javascript. In this project I learn a lot of stuff about fetching data from an api and even how to use geolocation API on javascript. This was fun to make.",
     "stacks": ["HTML & CSS", "Vanilla JS", "API", "git"],
