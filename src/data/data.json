@@ -28,5 +28,25 @@
     "type": "Group Project",
     "repo": "https://github.com/Just-a-NoobieDev/ADSProjects-Employee--Record-Management-System",
     "demoUrl": "http://erms.rf.gd/"
+  },
+  {
+    "id": 3,
+    "title": "Netflix clone",
+    "description": "This project is one of my earliest reactjs projects. This is a netflix clone to learn the react js framework and integrate API to it. I learn a lot when building this project and I enjoy making it.",
+    "stacks": ["React", "API", "git"],
+    "status": "Done",
+    "type": "personal",
+    "repo": "https://github.com/Just-a-NoobieDev/Netflix-landing-page",
+    "demoUrl": "https://netflixclone-landing.vercel.app/"
+  },
+  {
+    "id": 4,
+    "title": "Covid 19 Case Tracker",
+    "description": "My very first ever api project using only HTML, CSS, and vanilla Javascript. In this project I learn a lot of stuff about fetching data from an api and even how to use geolocation API on javascript. This was fun to make.",
+    "stacks": ["HTML & CSS", "Vanilla JS", "API", "git"],
+    "status": "Done",
+    "type": "personal",
+    "repo": "https://github.com/Just-a-NoobieDev/Covid-19-Today",
+    "demoUrl": "http://covid-19-today.infinityfreeapp.com/"
   }
 ]
