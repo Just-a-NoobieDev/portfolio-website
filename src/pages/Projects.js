@@ -120,6 +120,13 @@ function ProjectsPage() {
         </Buttons>
         <Buttons
           onClick={handleClick}
+          className={`${filter.toLowerCase() === "nextjs" ? "active" : ""}`}
+          id="nextjs"
+        >
+          Next JS
+        </Buttons>
+        <Buttons
+          onClick={handleClick}
           className={`${filter.toLowerCase() === "mern" ? "active" : ""}`}
           id="mern"
         >
@@ -147,6 +154,15 @@ function ProjectsPage() {
           id="php & mysql"
         >
           PHP & MySQL
+        </Buttons>
+        <Buttons
+          onClick={handleClick}
+          className={`${
+            filter.toLowerCase() === "python" ? "active" : ""
+          }`}
+          id="python"
+        >
+          Python
         </Buttons>
       </SubContainers>
       <Container>
