@@ -3,7 +3,7 @@
     "id": 0,
     "title": "Smart Plastic Bottle Bin",
     "description": "Our Capstone Project. This is the web application of our IOT based Reverse Vending Machine for plastic bottle. Planning, Designing and Developing it from the scratch enables me to continuously improve my web development skills and strive more to produce quality projects in the future. Major features of it are the real-time monitoring of trashbin and management system.",
-    "stacks": ["Next JS", "Supabase", "Tailwind", "Shadcn", "Vercel", "git", "Agile"],
+    "stacks": ["NextJS", "Supabase", "Tailwind", "Shadcn", "Vercel", "git", "Agile"],
     "status": "Done",
     "type": "capstone",
     "repo": "https://github.com/Just-a-NoobieDev/Smart-Bin-RVM",
