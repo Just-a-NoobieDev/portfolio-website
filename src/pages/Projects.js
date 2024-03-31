@@ -84,6 +84,21 @@ function ProjectsPage() {
     if (filter.toLowerCase() === "all") {
       return dataArr;
     } else if (
+      filter.toLowerCase() === "others" &&
+      !val.stacks.map((item) => item.toLocaleLowerCase()).includes("go") &&
+      !val.stacks.map((item) => item.toLocaleLowerCase()).includes("nestjs") &&
+      !val.stacks.map((item) => item.toLocaleLowerCase()).includes("react") &&
+      !val.stacks.map((item) => item.toLocaleLowerCase()).includes("fullstack")
+    ) {
+      return val;
+    } else if (
+      filter.toLowerCase() == "frontend" &&
+      !val.stacks.map((item) => item.toLocaleLowerCase()).includes("go") &&
+      !val.stacks.map((item) => item.toLocaleLowerCase()).includes("nestjs") &&
+      !val.stacks.map((item) => item.toLocaleLowerCase()).includes("fullstack")
+    ) {
+      return val;
+    } else if (
       val.stacks
         .map((item) => item.toLocaleLowerCase())
         .includes(filter.toLowerCase())
@@ -113,56 +128,31 @@ function ProjectsPage() {
         </Buttons>
         <Buttons
           onClick={handleClick}
-          className={`${filter.toLowerCase() === "react" ? "active" : ""}`}
-          id="react"
+          className={`${filter.toLowerCase() === "go" ? "active" : ""}`}
+          id="go"
         >
-          React
+          Go
         </Buttons>
         <Buttons
           onClick={handleClick}
-          className={`${filter.toLowerCase() === "nextjs" ? "active" : ""}`}
-          id="nextjs"
+          className={`${filter.toLowerCase() === "nestjs" ? "active" : ""}`}
+          id="nestjs"
         >
-          Next JS
+          NestJs
         </Buttons>
         <Buttons
           onClick={handleClick}
-          className={`${filter.toLowerCase() === "mern" ? "active" : ""}`}
-          id="mern"
+          className={`${filter.toLowerCase() === "frontend" ? "active" : ""}`}
+          id="frontend"
         >
-          MERN
+          Front End Projects
         </Buttons>
         <Buttons
           onClick={handleClick}
-          className={`${filter.toLowerCase() === "html & css" ? "active" : ""}`}
-          id="html & css"
+          className={`${filter.toLowerCase() === "fullstack" ? "active" : ""}`}
+          id="fullstack"
         >
-          HTML & CSS
-        </Buttons>
-        <Buttons
-          onClick={handleClick}
-          className={`${filter.toLowerCase() === "vanilla js" ? "active" : ""}`}
-          id="vanilla js"
-        >
-          Vanilla JS
-        </Buttons>
-        <Buttons
-          onClick={handleClick}
-          className={`${
-            filter.toLowerCase() === "php & mysql" ? "active" : ""
-          }`}
-          id="php & mysql"
-        >
-          PHP & MySQL
-        </Buttons>
-        <Buttons
-          onClick={handleClick}
-          className={`${
-            filter.toLowerCase() === "python" ? "active" : ""
-          }`}
-          id="python"
-        >
-          Python
+          Full Stack Projects
         </Buttons>
       </SubContainers>
       <Container>

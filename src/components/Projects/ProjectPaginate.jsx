@@ -18,20 +18,23 @@ function Items({ state, itemsPerPage, itemOffset, setPageCount }) {
   return (
     <>
       {split && split.length > 0 ? (
-        split.map(({ id, title, description, stacks, type, repo, demoUrl }) => {
-          return (
-            <Project
-              key={id}
-              title={title}
-              description={description}
-              stacks={stacks}
-              type={type}
-              repo={repo}
-              live={demoUrl}
-              image={`"${imagesLink[id]}"`}
-            />
-          );
-        })
+        split.map(
+          ({ id, title, description, stacks, type, repo, demoUrl, status }) => {
+            return (
+              <Project
+                key={id}
+                title={title}
+                description={description}
+                stacks={stacks}
+                type={type}
+                repo={repo}
+                live={demoUrl}
+                status={status}
+                image={`"${imagesLink[id]}"`}
+              />
+            );
+          }
+        )
       ) : (
         <>
           <Container>

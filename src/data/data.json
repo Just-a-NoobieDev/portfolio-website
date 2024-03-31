@@ -3,7 +3,17 @@
     "id": 0,
     "title": "Smart Plastic Bottle Bin",
     "description": "Our Capstone Project. This is the web application of our IOT based Reverse Vending Machine for plastic bottle. Planning, Designing and Developing it from the scratch enables me to continuously improve my web development skills and strive more to produce quality projects in the future. Major features of it are the real-time monitoring of trashbin and management system.",
-    "stacks": ["NextJS", "Supabase", "Tailwind", "Shadcn", "Vercel", "git", "Agile"],
+    "stacks": [
+      "NextJS",
+      "React",
+      "Supabase",
+      "Tailwind",
+      "Shadcn",
+      "Vercel",
+      "FullStack",
+      "git",
+      "Agile"
+    ],
     "status": "Done",
     "type": "capstone",
     "repo": "https://github.com/Just-a-NoobieDev/Smart-Bin-RVM",
@@ -11,16 +21,55 @@
   },
   {
     "id": 1,
+    "title": "Bank API using Go Programming Language",
+    "description": "A simple bank API that I created using Go Programming Language. This project is my first ever backend project using Go and I learn a lot of stuff about it. I also use Postman to test the API and I also use Docker to containerize the application.",
+    "stacks": [
+      "Go",
+      "PosgreSQL",
+      "SQLc",
+      "Gin framework",
+      "Postman",
+      "Docker",
+      "git",
+      "swagger"
+    ],
+    "status": "Initialy Done",
+    "type": "personal",
+    "repo": "https://github.com/Just-a-NoobieDev/bankapi-gin-sqlc-postgres",
+    "demoUrl": "/"
+  },
+  {
+    "id": 2,
+    "title": "Todo app using Go Programming Language, Templ and HTMX",
+    "description": "Exploring the Go Programming Language, Templ and HTMX. This project is a simple todo application with a crud functionality. I have fun building this project and I learn a lot of stuff about Go and HTMX. HTMX is cool integrating common javascript function directly to the html.",
+    "stacks": ["Go", "Echo framework", "HTMX", "templ", "git"],
+    "status": "Done",
+    "type": "personal",
+    "repo": "https://github.com/Just-a-NoobieDev/todolist-go-htmx-templ",
+    "demoUrl": "/"
+  },
+  {
+    "id": 3,
     "title": "Loan Management System",
     "description": "A Django web application project for our web system and technologies 3 course. A simple loan management web application that has the ability to record loan and payments of the client.",
-    "stacks": ["Python", "Django", "Tailwind", "SQLite", "HTML", "JQuery", "git"],
+    "stacks": [
+      "Python",
+      "Django",
+      "Tailwind",
+      "SQLite",
+      "HTML",
+      "FullStack",
+      "JQuery",
+      "git",
+      "MVT"
+    ],
     "status": "Done",
     "type": "Group Project",
     "repo": "https://github.com/Just-a-NoobieDev/loan-management-system",
     "demoUrl": "https://carl14.pythonanywhere.com/"
   },
   {
-    "id": 2,
+    "id": 4,
     "title": "Personal Portfolio Website",
     "description": "A web based portfolio that showcase all of the projects I created throughout my journey as a web developer. Building this projects is fun and I gain a lot of knowledge about React Js Library and styled-components.",
     "stacks": ["React", "styled-components", "vercel", "git"],
@@ -30,7 +79,7 @@
     "demoUrl": "/"
   },
   {
-    "id": 3,
+    "id": 5,
     "title": "CryptoWhales",
     "description": "A cryptocurrency web application that delivers the latest news and cryptocurrency prices with data from different public API's from RapidAPI such as Coinranking API, Bing News Search API and Coingecko API.",
     "stacks": ["React", "styled-components", "git", "vercel"],
@@ -40,27 +89,34 @@
     "demoUrl": "https://cryptowhales.vercel.app/"
   },
   {
-    "id": 4,
+    "id": 6,
     "title": "MERN Stack Authentication System",
     "description": "My first step of becoming a full stack developer. This project is my first ever mern stack application and I use bunch of packages to build this awesome stuff. Making this was very special not only because it is my first time building a full stack app but it is because I successfully built it without reaching help from youtube tutorials.",
-    "stacks": ["React", "MERN", "styled-components", "git", "vercel"],
+    "stacks": [
+      "React",
+      "MERN",
+      "styled-components",
+      "FullStack",
+      "git",
+      "vercel"
+    ],
     "status": "Done",
     "type": "Group Project",
     "repo": "https://github.com/Just-a-NoobieDev/ADSProjects-Employee--Record-Management-System",
     "demoUrl": "http://erms.rf.gd/"
   },
   {
-    "id": 5,
+    "id": 7,
     "title": "Employee Record Management System",
     "description": "My very first taste of backend development using PHP and MySQL. This project is our final requirements for our subject Advance Database System. For educational purposes, this system is not a full pledge employee management system, this is only a very simple system to perform CRUD operations and apply MySQL clauses. Unfortunately this system is not yer responsive so we advise it to view the live link in laptop devices that has a width resolution of 1024px to 1920px.",
-    "stacks": ["HTML & CSS", "PHP & MySQL", "git"],
+    "stacks": ["HTML & CSS", "PHP & MySQL", "FullStack", "git"],
     "status": "Done",
     "type": "Group Project",
     "repo": "https://github.com/Just-a-NoobieDev/ADSProjects-Employee--Record-Management-System",
     "demoUrl": "http://erms.rf.gd/"
   },
   {
-    "id": 5,
+    "id": 8,
     "title": "Netflix clone",
     "description": "This project is one of my earliest reactjs projects. This is a netflix clone to learn the react js framework and integrate API to it. I learn a lot when building this project and I enjoy making it.",
     "stacks": ["React", "API", "git"],
@@ -70,7 +126,7 @@
     "demoUrl": "https://netflixclone-landing.vercel.app/"
   },
   {
-    "id": 6,
+    "id": 9,
     "title": "Covid 19 Case Tracker",
     "description": "My very first ever api project using only HTML, CSS, and vanilla Javascript. In this project I learn a lot of stuff about fetching data from an api and even how to use geolocation API on javascript. This was fun to make.",
     "stacks": ["HTML & CSS", "Vanilla JS", "API", "git"],
@@ -78,5 +134,15 @@
     "type": "personal",
     "repo": "https://github.com/Just-a-NoobieDev/Covid-19-Today",
     "demoUrl": "http://covid-19-today.infinityfreeapp.com/"
+  },
+  {
+    "id": 10,
+    "title": "Todo API using NestJS and GraphQL",
+    "description": "My first ever GraphQL API project using NestJS. This is a TODO API project that I created to learn how to create a GraphQL API as well to explore NestJS framework with TypeScrip as preparation for the task that will be given to me during my internship because the company use this tech stack.",
+    "stacks": ["NestJS", "GraphQL", "TypeScript", "MongoDB", "Mongoose", "git"],
+    "status": "Done",
+    "type": "personal",
+    "repo": "https://github.com/Just-a-NoobieDev/todo-nest-graphql",
+    "demoUrl": "/"
   }
 ]
