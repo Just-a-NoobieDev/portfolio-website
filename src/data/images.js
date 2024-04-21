@@ -9,9 +9,11 @@ import gobank from "../images/gobank.jpg";
 import loanmanagement from "../images/loanmanagement.png";
 import todohtmx from "../images/todohtmx.png";
 import placeholder from "../images/placeholder.jpg";
+import educonnect from "../images/educonnect.jpg";
 
 const images = [
   smartbin,
+  educonnect,
   gobank,
   todohtmx,
   loanmanagement,
