@@ -46,7 +46,7 @@ function About() {
             their process and increase profit. Eager to contribute my expertise
             and enthusiasm to innovative projects and collaborative teams.
           </Paragraph>
-          <a href="Carl-James-Roxas-Resume.pdf" download target="_blank">
+          <a href="https://drive.google.com/file/d/1HLabu-tD9ycBBxi4cW39RMZMRSfbnn_o/view?usp=sharing" download target="_blank">
             <BtnLink>Download Resume</BtnLink>
           </a>
         </TextContentWrap>
