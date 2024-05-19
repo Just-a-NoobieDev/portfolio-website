@@ -92,7 +92,7 @@ function ProjectsPage() {
     ) {
       return val;
     } else if (
-      filter.toLowerCase() == "frontend" &&
+      filter.toLowerCase() === "frontend" &&
       !val.stacks.map((item) => item.toLocaleLowerCase()).includes("go") &&
       !val.stacks.map((item) => item.toLocaleLowerCase()).includes("nestjs") &&
       !val.stacks.map((item) => item.toLocaleLowerCase()).includes("fullstack")

@@ -30,7 +30,7 @@ function Contact() {
           target="_blank"
           rel="noreferrer"
         >
-          <Email>carljames.roxas.m@gmail.com</Email>
+          <Email>roxas.carljames.m@gmail.com</Email>
         </a>
       </SubContainer>
     </ContactContainer>

@@ -85,7 +85,7 @@ function Footer() {
           title="Instagram - carllljamesss"
           target="_blank"
           rel="noreferrer"
-          href="https://www.linkedin.com/in/carl-james-r-b66350201/"
+          href="https://www.linkedin.com/in/carljamesroxas/"
         >
           linkedin
         </Links>

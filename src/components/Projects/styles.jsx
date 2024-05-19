@@ -143,15 +143,18 @@ export const ProjectLink = styled(Paragraph)`
   border-bottom: 2px solid transparent;
   transition: border-bottom 0.3s;
   cursor: pointer;
+  background-color: #222;
+  color: #fff;
+  padding: 0.5rem 1rem;
 
   @media (min-width: ${breakpoints.mobileMax}) {
-    width: 119px;
     display: block;
     font-size: 18px;
     margin: 2rem auto;
   }
   :hover {
     border-bottom: 2px solid #696969;
+    opacity: 0.8;
   }
   span {
     font-size: 20px;

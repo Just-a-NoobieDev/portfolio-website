@@ -9,7 +9,7 @@ import imagesLink from "../../data/images";
 import { useState } from "react";
 
 function ProjectSection() {
-  const [data, setData] = useState(INFOS);
+  const [data] = useState(INFOS);
 
   return (
     <Container style={{ marginTop: "150px" }}>
@@ -56,7 +56,7 @@ function ProjectSection() {
             });
           }}
         >
-          View All
+          View All Projects
         </ProjectLink>
       </Link>
     </Container>

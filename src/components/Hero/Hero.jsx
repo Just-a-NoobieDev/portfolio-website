@@ -1,9 +1,9 @@
-  import {
-    FaGithub,
-    FaInstagramSquare,
-    FaLinkedin,
-    FaTwitter,
-  } from "react-icons/fa";
+import {
+  FaGithub,
+  FaInstagramSquare,
+  FaLinkedin,
+  FaTwitter,
+} from "react-icons/fa";
 import { HeroElements, HeroWrapCont, Line, Social, SocialDiv } from "./styles";
 
 import { Container } from "../../utils/Container";
@@ -30,7 +30,7 @@ function Hero() {
               title="Linkedin - carllljamesss"
               target="_blank"
               rel="noreferrer"
-              href="https://www.linkedin.com/in/carl-james-r-b66350201/"
+              href="https://www.linkedin.com/in/carljamesroxas/"
             >
               <Social>
                 <FaLinkedin className="linkedn" size="1.5em" />
@@ -60,12 +60,13 @@ function Hero() {
         </HeroElements>
         <HeadingMain className="gray-text">
           <span>
-            Hello, I am Carl James. <br />
+            Hello, I am Carl James Roxas. <br />
           </span>
           <span>
-            A passionate <span className="blue">Web Developer</span> , <br />{" "}
+            Building <span className="blue">full-stack solutions</span> that
+            are, <br />{" "}
           </span>{" "}
-          <span>and a Student.</span>
+          <span>beautiful, functional, and secure.</span>
         </HeadingMain>
       </HeroWrapCont>
     </Container>

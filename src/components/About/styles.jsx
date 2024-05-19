@@ -1,16 +1,14 @@
 import styled from "styled-components";
 
-import Img from "../../images/aboutpic.png";
+import Img from "../../images/no-bg-pic.png";
 import { breakpoints } from "../../utils/Media";
 
 export const AboutImg = styled.div`
   background-image: url(${Img});
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center;
   width: 100%;
   height: 300px;
-  margin-top: 2rem;
 
   @media (min-width: 450px) {
     width: 70%;

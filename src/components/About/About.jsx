@@ -8,17 +8,23 @@ import {
   TextContentWrap,
 } from "../../utils/Typography";
 import {
-  SiCss3,
   SiExpress,
   SiGit,
-  SiHtml5,
-  SiJavascript,
+  SiNextdotjs,
   SiMongodb,
-  SiMysql,
   SiNodedotjs,
   SiPhp,
   SiReact,
+  SiNestjs,
+  SiSupabase,
+  SiGraphql,
 } from "react-icons/si";
+import {
+  BiLogoTypescript,
+  BiLogoGoLang,
+  BiLogoPostgresql,
+} from "react-icons/bi";
+import { MdHttp } from "react-icons/md";
 
 function About() {
   return (
@@ -27,21 +33,20 @@ function About() {
       <AboutContainer>
         <TextContentWrap>
           <Paragraph>
-            Hi I am Carl James Roxas. I am a self taught web developer based in
-            Bulacan, Philippines.
+            I am a full-stack web developer based in Bulacan, Philippines.
+            Graduate of Bachelor of Science in Information Technology major in
+            Web and Mobile App Development.
             <br />
             <br />
-            Currently a college student studying Bachelor of Science in
-            Information Technology major in Web and Mobile App Development. I’m
-            obsessed on making website and learning everything about web
-            development.
-            <br />
-            <br />
-            Very passionate individual and highly motivated to become successful
-            professional web developer and to build many applications that will
-            make other peoples life easier is my ultimate goal.
+            Dedicated and passionate Software Developer with 1+ year of
+            professional experience developing and implementing web based
+            solutions, Proficient in full-stack web development, particularly
+            focused on Backend side. Developed API and design database for a
+            Sales and Inventory Management system that helps SME’s to streamline
+            their process and increase profit. Eager to contribute my expertise
+            and enthusiasm to innovative projects and collaborative teams.
           </Paragraph>
-          <a href="/" download="carljamesroxas-resume">
+          <a href="Carl-James-Roxas-Resume.pdf" download target="_blank">
             <BtnLink>Download Resume</BtnLink>
           </a>
         </TextContentWrap>
@@ -62,15 +67,30 @@ function About() {
             <Row>
               <Paragraph>
                 <span>
-                  <SiJavascript />
+                  <BiLogoTypescript />
                 </span>{" "}
-                Javascript ES6
+                Typescript
               </Paragraph>
+              <Paragraph>
+                <span>
+                  <SiNextdotjs />
+                </span>{" "}
+                NextJS
+              </Paragraph>
+            </Row>
+            <Row>
               <Paragraph>
                 <span>
                   <SiReact />
                 </span>{" "}
                 React
+              </Paragraph>
+
+              <Paragraph>
+                <span>
+                  <SiNestjs />
+                </span>{" "}
+                NestJS
               </Paragraph>
             </Row>
             <Row>
@@ -90,15 +110,15 @@ function About() {
             <Row>
               <Paragraph>
                 <span>
-                  <SiHtml5 />
+                  <BiLogoGoLang />
                 </span>{" "}
-                HTML
+                Go
               </Paragraph>
               <Paragraph>
                 <span>
-                  <SiCss3 />
+                  <SiSupabase />
                 </span>{" "}
-                CSS
+                Supabase
               </Paragraph>
             </Row>
             <Row>
@@ -110,9 +130,9 @@ function About() {
               </Paragraph>
               <Paragraph>
                 <span>
-                  <SiMysql />
+                  <BiLogoPostgresql />
                 </span>{" "}
-                SQL
+                PostgreSQL
               </Paragraph>
             </Row>
             <Row>
@@ -127,6 +147,20 @@ function About() {
                   <SiPhp />
                 </span>{" "}
                 PHP
+              </Paragraph>
+            </Row>
+            <Row>
+              <Paragraph>
+                <span>
+                  <SiGraphql />
+                </span>{" "}
+                GraphQL
+              </Paragraph>
+              <Paragraph>
+                <span>
+                  <MdHttp />
+                </span>{" "}
+                REST API
               </Paragraph>
             </Row>
           </SkillTable>
