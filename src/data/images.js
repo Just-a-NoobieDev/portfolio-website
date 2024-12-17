@@ -10,8 +10,10 @@ import loanmanagement from "../images/loanmanagement.png";
 import todohtmx from "../images/todohtmx.png";
 import placeholder from "../images/placeholder.jpg";
 import educonnect from "../images/educonnect.jpg";
+import nabify from "../images/nabify-home.png";
 
 const images = [
+  nabify,
   smartbin,
   educonnect,
   gobank,
