@@ -1,5 +1,8 @@
 #!/bin/bash
 
+echo "Installing yarn command"
+npm install --global yarn
+
 echo "Running yarn install"
 yarn install
 
